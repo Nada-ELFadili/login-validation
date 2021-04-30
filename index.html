@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAUL & JOSE</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+
+
+
+    
+  </head>
+  <body class="">
+    <div
+      class="container mx-auto row align-items-center rounded"
+      style="height: 100vh"
+    >
+      <div class="row shadow rounded-lg p-0 rounded-3">
+        <div
+          class="col-md-6 mx-0 align-self-stretch d-flex flex-column p-4 gap-3 position-relative"
+        >
+          <div>
+            <i
+              class="fa fa-user p-4 bg-danger fs-3 text-white rounded-3 position-absolute"
+              style="top: -40px"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h1 class="fs-3">Inscrivez-vous</h1>
+          <p class="text-muted">Créez un compte gratuit sur Futur Digital</p>
+          <div class="form-outline">
+            <input type="nom" id="nom" class="form-control py-3" />
+            <label class="form-label" style="top: 10px" for="nom">Nom complet</label>
+          </div>
+          <div class="form-outline">
+            <input type="email" id="email" class="form-control py-3" />
+            <label class="form-label" style="top: 10px" for="email"
+              >Adresse e-mail</label
+            >
+          </div>
+          <div>
+            <div class="position-relative">
+              <i
+                class="fa fa-eye position-absolute"
+                style="
+                  font-size: 20px;
+                  cursor: pointer;
+                  z-index: 9999;
+                  right: 10px;
+                  top: 18px;
+                "
+                onclick="eye('password')"
+                aria-hidden="true"
+              ></i>
+
+              <div class="form-outline md-outline">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control py-3 form-icon-trailing"
+                />
+                <label class="form-label" style="top: 10px" for="password"
+                  >Mot de passe</label
+                >
+              </div>
+              <p id="Err"></p>
+            </div>
+          </div>
+          <div class="position-relative">
+            <i
+              class="fa fa-eye position-absolute"
+              style="
+                font-size: 20px;
+                cursor: pointer;
+                z-index: 9999;
+                right: 10px;
+                top: 18px;
+              "
+              onclick="eye('eyeConfirmation')"
+              aria-hidden="true"
+            ></i>
+
+            <div class="form-outline md-outline">
+              <input
+                type="password"
+                id="eyeConfirmation"
+                class="form-control py-3 form-icon-trailing"
+              />
+              <label class="form-label" style="top: 10px" for="eyeConfirmation"
+                >Confirmer le Mot de passe</label
+              >
+            </div>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              style="left: 5px"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              J'ai accepté
+              <a class="text-danger text-decoration-underline" href="#"
+                >les conditions générales</a
+              >
+            </label>
+          </div>
+          <button
+            onclick="validate()"
+            type="button"
+            class="btn btn-danger btn-block py-3 fs-6 mt-4"
+          >
+            S'INSCRIRE
+          </button>
+        </div>
+        <div class="col-md-6 mx-0 px-0">
+          <img src="./images/signup-image.png" class="w-100" height="100%" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- MDB -->
+    <script src="./js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+    ></script>
+  </body>
+</html>
